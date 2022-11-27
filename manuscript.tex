@@ -1,0 +1,328 @@
+\documentclass{article}
+%\documentclass[11pt, twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage[permil]{overpic}
+\usepackage{soul}
+\usepackage{multirow}
+
+\usepackage{cite}
+
+
+%\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+%\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+%https://www.overleaf.com/project/62e03ff32717feb464e1https://www.overleaf.com/project/62e03ff32717feb464e16bca6bca
+\newcommand{\sqrtsNN}{\mbox{$\sqrt{\mathrm{s}_{_{\mathrm{NN}}}}$}}
+\newcommand{\sqrts}{\mbox{$\sqrt{\mathrm{s}}$}}
+\newcommand{\axi}{$\overline{\Xi}^+$}
+\newcommand{\xim}{$\Xi^-$}
+%\newcommand{\xi}{$\Xi$}
+\newcommand{\alam}{$\overline{\Lambda}$}
+\newcommand{\sbar}{$\overline{\s}$}
+\newcommand{\lam}{$\Lambda$}
+\newcommand{\ks}{$\mathrm{K}^{0}_{\mathrm S}$}
+\newcommand{\omm}{$\Omega^-$}
+\newcommand{\aom}{$\overline{\Omega}^+$}
+\newcommand{\mpt}{$\langle p_T \rangle$ }
+\newcommand{\ppt}{$p_{\rm T}$}
+\newcommand{\muB}{$\mu_{\rm B}$}
+\newcommand{\rcp}{$R_{\textrm{\tiny{CP}}}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.12}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setlength{\parindent}{.5cm} \setlength{\columnsep}{.5cm}
+\setlength{\oddsidemargin}{-.5cm} \setlength{\topmargin}{-1.5cm}
+\setlength{\textwidth}{17.5cm} \setlength{\textheight}{23.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def \auau  {Au+Au}
+\def \pp    {$p + p$ }
+\def \llam {$\Lambda + \overline{\Lambda}$}
+\def \xxi       {$\Xi^- + \overline{\Xi}^+$ }
+\def \oom       {$\Omega^- + \overline{\Omega}^+$ }
+\newcommand{\mean}[1]{\left\langle #1 \right\rangle}
+
+\usepackage{graphicx}
+%\usepackage{cite}
+
+%\usepackage{lineno}
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
+\raggedbottom
+
+\bibliographystyle{unsrt}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\usepackage{lineno}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%
+%\twocolumn[
+%\begin{@twocolumnfalse}
+
+
+\begin{center}
+{\Large \bf Study of Baryon number transport using model simulations in $pp$ collisions at LHC Energies}
+
+\vskip1.0cm
+M.~U.~Ashraf$^{1}${\footnote{Email: usman.ashraf@cern.ch}},
+Junaid~Tariq$^{2}${\footnote{Email: junaid.tariq@cern.ch}},
+Sumaira Ikram$^{3}$,
+A.~M.~Khan$^{4}${\footnote{Email: ahsan.mehmood.khan@cern.ch}},
+%Khuram Tariq$^{5}$,
+Jamila~Butt$^{5}$ and
+Samya~Zain$^{6}$\\
+
+{\small\it 
+$^1$Pakistan Institute of Nuclear Science and Technology (PINSTECH), Islamabad 45650, Pakistan\\
+$^2$Department of Physics, Quaid-i-Azam University, Islamabad 44000, Pakistan\\
+$^3$Department of Physics, Riphah International University, Islamabad 44000, Pakistan\\\
+$^4$Key Laboratory of Quark \& Lepton Physics (MOE) and Institute of Particle Physics,
+Central China Normal University, Wuhan 430079, China\\
+%$^5$Shandong University, China\\
+$^5$Department of Mathematics and Sciences, Prince Sultan University, Riyadh,  11586, Saudi Arabia\\
+$^6$Department of Physics, Susquehanna University, Selinsgrove, PA, 17870, USA}
+\end{center}
+
+\vskip1.0cm
+%%%%%%%%%%%%%%%%%%%%%%
+%\linenumbers
+%\date{October 2022}
+
+%\begin{document}
+
+%\maketitle
+\begin{abstract}
+We report on the excitation function of anti-baryon to baryon ratios ($\overline{p}/p$, {\alam /\lam} and {\axi / \xim}) in $pp$ collisions at {\sqrts} = 0.9, 2.76, 7 TeV from DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC  model simulations. The computed ratios obtained from model simulations are then compared to the experimental results given by the ALICE experiment. To study the predictions of these models at {\sqrts} = 13.6 TeV, at which LHC is taking high luminosity Run-III data in $pp$ collisions, we also computed these ratios at 13.6 TeV. The anti-baryon to baryon ratios are extremely important for the study of baryon number transport mechanisms. These ratios help determine the carriers of the baryon number and in the extraction of baryon structure information. We find that these ratios are independent of both the transverse momentum ({\ppt}) and the rapidity ($y$). Even though all models show a good agreement between model simulations and data, the ratios extracted from DPMJET-III model closely describes data at all energies. It is observed that these ratios converge to unity for various model predictions from 0.9 to 13.6 TeV. This convergence also indicates that the anti-baryon to baryon ratios follow the mass hierarchy, such that the hyperon specie containing more strange quarks ({\alam /\lam} and {\axi / \xim}) approaches unity faster than specie containing fewer strange quarks ($\overline{p}/p$). In other words, increasing the strangeness content, results in higher values of  $\overline{B}/B$ ratio. It is also observed that the $\overline{B}/B$ ratio approaches unity more rapidly with the increase in {\sqrts} energy. Furthermore, all models describe similar trends with increasing  energies. At lower energies we observe an excess production of baryons over anti-baryons. However, this effect vanishes at higher energies due to the baryon-anti-baryon pair production and the baryon-anti-baryon yield becomes equal. Using model simulations, we additionally  compute the asymmetry, ($A\equiv\frac{N_{p}-N_{\bar{p}}}N_{p}+N_{\bar{p}}}$) for protons. The asymmetry shows a decreasing trend with increase in energy from 0.9 to 7 TeV for all energies. This asymmetry trend is confirmed by model predictions at {\sqrts} = 13.6 TeV which will help to put possible constraints on model calculations at {\sqrts} = 13.6 TeV once the Run-III data for LHC becomes available.    
+
+  
+
+
+\vskip0.5cm
+\keywords{simulations, baryon number transport, predictions, pair production, hyperon}
+\end{abstract}
+
+%\end{@twocolumnfalse}
+%]
+%\maketitle
+%\begin{multicols}{2}
+
+\section{Introduction}\label{sec1}
+Two of the most fundamental physical observables extensively studied and experimentally measured for many decades in both cosmic-ray physics and the hadronic colliders are the yield and the transverse momentum spectra ({\ppt}) of identified particles produced in high energy hadronic interactions~\cite{1}. At collider energies, hadrons at the partonic level are produced both via the hard scattering and the soft scattering processes. Hard scattering is the interaction of two partons with a large momentum transfer  which results in the production of high {\ppt} particles. This process is theoretically explained by the factorization theorem based on perturbative Quantum Chromodynamics (p-QCD) calculations~\cite{2}. Understanding hard scattering processes is important because at the large Hadron collider (LHC), the lower $x$ regime is investigated by increasing the center of mass energy (\sqrts) which results in an increased contribution from hard scattering processes. This increased production of high {\ppt} particles comes from the fragmentation of gluons in the kinematic regions and is probed by the measurements as done in~\cite{2,3}. On the other hand, majority of low {\ppt} ({\ppt} $< 2$ GeV/$c$) particles result from soft scattering processes that have a small amount of momentum transfer. Production of particles in the soft scattering regime cannot be calculated from the first principle and therefore QCD inspired phenomenological models are expected to play a significant role in these calculations. These models are then tuned to be more compatible with prior measurements. Low {\ppt} measurements are  expected to provide additional constraints on simulation models. Furthermore, soft particle production studies are an important tool for understanding basic mechanisms involved in particle production at the low {\ppt} region.
+
+
+Quantum Chromodynamics (QCD) does not fully describe the production of baryons, e.g. it is still unclear in QCD whether the baryon number should be associated with the valence quark or with its gluonic field. However, baryons in QCD are represented by a gauge-invariant state operator which may shed light on what is called the gluonic string junction. A gluonic string junction is a single point in QCD at which three valance quarks join together at a single point~\cite{4, 5}. String junction depicts the association of the baryon number with  baryon gluonic field. It is important to note that in this representation, the string junction is responsible for the production of baryon anti-baryon pairs from the vacuum, whereas the anti-string pair production is responsible for the production of sea quark-antiquarks. The anti-string pair mechanism is responsible for the production of anti-baryons in baryon-baryon collisions.  Another possibility exists that a final baryon may have contributions from string junction or valence quarks, or diquarks of the incoming baryons. The significant diffusion of constituents over the large rapidity results in different baryons and anti baryon spectra at mid-rapidity~\cite{4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}.
+
+In Regge field theory, the string junction of baryons coming from the beam at large rapidity $\Delta y$~\cite{18, 19}, can be calculated using the expression, $exp [(\alpha_j - 1) \Delta y]$~\cite{4}, where, $\alpha_j$ is the intercept of the string junction trajectory; $\Delta y  \equiv y_{beam} - y$, and $y_{beam}( \equiv ln(\sqrts / m_B))$ is the rapidity of the incoming baryon; $m_B$ is the mass of the baryon, and $y$ is the rapidity of the string junction. Theoretically, at present, it is not possible to calculate the intercept $\alpha_j$ of the string junction, which is a non-pQCD object.  At mid-rapidity, the (anti-) baryons spectra are expected to vary depending on the value of $\alpha_j$. At $\alpha_j \approx 1$, the string junction of incoming baryons does not show rapidity dependence at high $\Delta y$, as was reported in Ref.\cite{5}. However, at $\alpha_j = 0.5$, transport of string junction approaches zero with the increase in $\Delta y$~\cite{4}.      
+
+Another source that causes differences in the particle and anti-particle spectra is the reggeon exchange with C-parity~\cite{6}, called the asymmetry ($A$), defined as ($A \equiv \frac{N_{p} - N_{\bar{p}}}{N_{p} + N_{\bar{p}}}$). A known Regge pole with intercept $\alpha_{\omega} \approx 0.5$ is called $\omega$-reggeon, whose exchange is one of the main factors which may cause differences in particle and anti-particle spectra. Since the value of $\alpha_{\omega}$ is less than one, its contribution decreases at mid-rapidity with the increasing colliding energy. Another source that causes differences in the particle and anti-particle spectra at mid-rapidity region, if it exists, is the negative signature of Regge pole and $\alpha_j \approx 1$. 
+
+The information about contributions of different mechanisms involved in the study of baryon production from baryon and anti-baryon spectra in $pp$ collisions can be gathered. Particularly, the measurement of the anti-baryon to baryon spectra and $\overline{B}/B$ ratios with different quark flavors, for example $p (\overline{p})$, {\lam (\alam)}, {\xim(\axi)}, and {\omm (\aom)} are directly used to find constraints on the mechanisms involved in the baryon production. %\textcolor{blue}{THIS IS OUR RESULT - SHOULD WE HAVE IT IN HERE????--- For example, increase in the strangeness content results in the reduced contribution of the stopping related processes of different beam constituents. As a result, the $\overline{B}/B$ ratio becomes closer to unity as the strangeness content increases.} 
+
+
+In this paper, we present the excitation function of the baryons at {\sqrts} = 0.9, 2.76, 7 TeV which is represented by the energy dependence of baryon ratios. To perform this task a comprehensive study was undertaken utilizing events generated from the various model-based event generators, namely the DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC. These events were used to study different $\overline{B}/B$ ratios ($\overline{p}/p$, {\alam /\lam}, {\axi / \xim}) at {\sqrts} = 0.9, 2.76, 7 TeV. The results thus obtained are then compared to the published data from the ALICE experiment~\cite{20}. We also performed simulations at {\sqrts} = 13.6 TeV to check the model predictions, where no current experimental data is available. However, experimental data should be available later because LHC is currently taking data at {\sqrts} = 13.6 TeV in Run-III. 
+
+This paper is organized as follows: a description of models in section~\ref{sec2}, followed by analysis, results and discussion presented in section~\ref{sec3}. Finally, the summary and conclusion presented in section~\ref{sec4}. 
+
+
+
+\section{Model Details}\label{sec2}
+In this section, the models used for simulation are discussed in detail. 
+\begin{itemize}
+    \item \textbf{DPMJET-III}: DPMJET-III unifies all features of the DPMJET-II~\cite{22}, Dtunuc-2~\cite{23, 24} and PHOJET-1.12~\cite{25} event generators into a single coding system. DPMJET model is based on multiple scattering Gribov-Glauber formalism and the  simulations of hadron-nucleus ($hN$), hadron-hadron ($hh$), photon-hadron ($\gamma h$), nucleus-nucleus ($NN$), photon-nucleus ($\gamma N$) and photon-photon ($\gamma \gamma$)  interactions can be studied from few GeV to the highest cosmic ray energies~\cite{26}. 
+    DPMJET is based on the Dual Parton Model (DPM) and it describes the soft and multi-partonic interactions in high-energy interactions~\cite{26}. The soft processes are defined by the exchange of pomerons under the Reggeon field theory~\cite{27}, whereas, hard processes are described by the perturbative parton scattering approach. The assumptions of duality~\cite{28} with Gribov's Reggeon field theory~\cite{27} and the predictions of large number of flavors ($N_f$) and number of colors ($N_c$) expansions of QCD~\cite{29} are combined in the DPM. The production cross-sections, as well as the total (quasi) elastic calculations for various colliding systems, can be calculated under the framework of DPMJET at high energies~\cite{30}. The new feature that uses enhanced graph cuts in the non-diffractive inelastic $hN$ and $NN$ collisions is incorporated in DPMJET-III model. On the other hand, the hadronization of color-neutral strings is based on the Lund model as incorporated in Pythia~\cite{31, 32}. Further details of the DPMJET-III model can be found in Ref.~\cite{26}.
+
+
+\item \textbf{Pythia 8}: Pythia 8~\cite{26, 31, 32, 33} simulates  in detail the particle production in high energy collisions over a wide range of energy scales. Due to the complexity of the hadron collisions and production, no one comprehensive theory can predict the event properties over the full range of available collision energies. Pythia 8 with a core, based on the Lund string model of hadronization~\cite{34}, addresses a large set of phenomenological problems in particle, astroparticle, nuclear, and neutrino physics. According to the string model,  QCD-vacuum expels a color flux when two color charges are located at a large distance within it. This leads the development of a color-flux tube between color charges which behaves as a string. In string fragmentation, these strings are then broken to form hadrons. Pythia 8 also includes a hybrid hadronization model~\cite{35} to accommodate heavy-ion collisions. For the historical evolution of the Pythia event generator, see Ref.~\cite{36}.
+
+Pythia 8 can simulate many Standard-Model processes, that include lepton-lepton, lepton-hadron and hadron-hadron, Beyond Standard Model~(BSM) particle decays, resonance decays with hadronization and final state showering, hadronization of partonic configuration, $NN$ collision for $\sqrtsNN>10~GeV$ and astrophysical phenomenons. Pythia includes a large selection of QCD processes classified into three groups: (1) interaction of light quarks and gluons,~2~$\rightarrow$~2~ (i.e, gg~$\rightarrow$~gg,~gg~$\rightarrow~q\bar{q}$~), (2) production of charm and bottom,~2~$\rightarrow$~2~(~i.e.,~gg~$\rightarrow~c\bar{c}$,~gg~$\rightarrow~b\bar{b}$~) and (3) processes involving light quarks and gluons, ~2~$\rightarrow$~3. Electroweak processes in Pythia include prompt photon production~($q$g~$\rightarrow~q\gamma$,~gg~$\rightarrow$~g$\gamma$~), weak boson, single vector boson~($\gamma^{*}/Z$,~$W^{\pm}$), photon collision~(~$\gamma \gamma\rightarrow q\bar{q},~c\bar{c},~b\bar{b}$~). Pythia 8 also provides charmonium and bottomonium production using non-relativistic QCD~(NRQCD)~\cite{37} including both color singlet and color octet configuration, top, Higgs production, and supersymmetric particles using Minimal Supersymmetric Simplified Model~(MSSM)~\cite{38}. 
+
+
+\item \textbf{EPOS-1.99/LHC}~\cite{39,40,41}: 
+In simple hadron-hadron interaction models at high energies, the inclusive cross-section is the convolution of the two
+parton distribution function~(PDF)~\cite{42}. Where the inclusive cross-section is deduced from the pQCD and PDF from deep inelastic scattering experiments. In the EPOS model, emission of partons after hard scattering is called the initial cascade or space-like cascade. These partons are generally off-shell and give rise to parton emission called final cascade or time-like cascade. The cascade of partons, including initial and final cascade, is called a parton ladder. Parton ladders are split into color strings which then fragment into hadrons. The soft part of the parton ladder is parameterized in Regge pole fashion~\cite{43}. To complete the picture, remnants which are usually colorless excited quark-antiquark are also taken into account. Thus in EPOS model, the hadron-hadron interaction is composed of two parts, inner contribution (from the parton ladder) and outer contribution (from the remnants). Remnants produce particles at large rapidities and parton ladders at central rapidities.\\
+EPOS~1.99~\cite{41}, which was released in 2009 was adjusted specifically to allow for an in-depth study of LHC data. This version was called EPOS-LHC~\cite{40}. EPOS-LHC can be adjusted (tuned) to reproduce different hadronic interactions, that include, $pp$, $pN$, and $NN$ interactions, where $N$ can be 1 to 210 nucleons in the energy range from 40 GeV in the lab frame to 1000 TeV in the center-of-mass frame. Collective hadronization in $pp$ collision produced by the very high density matter at the LHC energies are resolved by the introduction of various sets of parameters about flow effects in EPOS-LHC. Such highly dense matter core expands very quickly, requiring a unique radial flow algorithm used in EPOS-LHC.  
+\end{itemize}
+
+
+\section{Analysis, Results and Discussion}\label{sec3}
+In this section, we  discuss the data analysis and results in detail. We start the discussion with the introduction to the data sets utilized for this paper in section~\ref{sec3-1}. 
+
+\subsection{Data Set}\label{sec3-1}
+
+For data analysis, 30 million events for $pp$ collisions were simulated for each model at {\sqrts} = 0.9, 2.76 and 7 TeV using the DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. LHC is currently running (Run-III) to take high luminosity data from $pp$ collisions at {\sqrts} = 13.6 TeV. In order to study the predictions of different models, we also simulated 30 million events for $pp$ collisions at {\sqrts} = 13.6 TeV. The simulations are then compared to the available published results from the ALICE experiment~\cite{20}. Motivated by the inherent limitations of the current ALICE experiment, the final state hyperons are considered in the rapidity window $|y| < 0.8$ and $|y| < 0.5$ in case of $\overline{p}/p$ ratios. The particles with lifetime $c\tau >$ 10 mm are considered to be final state particles because they can be tracked in the detector. The cuts used in this study to calculate the transverse momentum ({\ppt}) and rapidity ($y$) distributions are listed in Table 1.   
+
+\input table1.tex
+
+\subsection{Results}
+
+We report the $\overline{B}/B$ ($\overline{p}/p$, {\alam /\lam} and {\axi / \xim}) ratios calculated utilizing the various model simulations discussed in section~\ref{sec2} as a function of {\ppt} and $y$ at the LHC energies. It is important to note that due to insufficient statistics, the {\aom / \omm} ratio was not studied in this analysis. The results of each of the $\overline{B}/B$ ratios are reported in detail below.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{pap_pt_0.9.pdf}
+
+\caption{{\ppt} dependent $\overline{p}/p$ ratio in $pp$ collisions at {\sqrts} = 0.9 TeV compared with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio shown in the lower panel. }
+\label{fig1}
+\end{figure}
+
+
+ The $\overline{p}/p$ ratio vs {\ppt} in $pp$ collisions at {\sqrts} = 0.9 TeV is shown in fig.~\ref{fig1}. The simulation results calculated from DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models are then compared with the experimental data from ALICE~\cite{20}. The data from ALICE shows no {\ppt} dependence and $\overline{p}/p$ ratio is almost smooth around 0.95 across all {\ppt} bins. In comparison, the DPMJET-III, Pythia~8, and EPOS~1.99 models successfully reproduce the data trends and show no {\ppt} dependence. On the other hand, the EPOS-LHC model slightly over predicts the ratio at higher {\ppt} bins ( $p_T > 0.7$ GeV/$c$). This agreement is further confirmed by the model-to-data ratio as shown in the lower panel of fig.~\ref{fig1}.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{lalamb_pt_0.9.pdf}
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{lalamb_eta_0.9.pdf}
+
+\caption{{\ppt} dependent {\alam /\lam} ratio (left) and $y$ (right) in $pp$ collisions at {\sqrts} = 0.9 TeV compared with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio shown in the lower panel. }
+\label{fig2}
+\end{figure}
+
+Figure~\ref{fig2} (left) represents the ({\alam /\lam}) ratio vs {\ppt} in $pp$ collisions at {\sqrts} = 0.9 TeV from the ALICE experiment and the results calculated from the model simulations. The ALICE data  shows a slight {\ppt} dependence for {\ppt}$>$ 2 GeV/$c$. It is observed that EPOS~1.99 and Pythia~8 are in good agreement with experimental data from ALICE within uncertainties. The DPMJET-III model at low {\ppt} bins ($<$ 2 GeV/$c$), reasonably reproduces the data while it over predicts the data at higher {\ppt} bins ($> 2$ GeV/$c$), which maybe due to statistical fluctuations. The EPOS-LHC model clearly over predicts data for all {\ppt} bins except for {\ppt} ($>$ 3.5 GeV/$c$)) at which the model matches the data within uncertainties. The lower panel of fig.~\ref{fig2} (left), gives model-to-data ratio which shows good agreement of model simulations with experimental data from ALICE. For EPOS-LHC the model-to-data ratio shows $<$ 10\% discrepancy apart from the $[3-3.5]$ GeV/$c$ {\ppt} bin for which the discrepancy is about 12\% due to statistical fluctuations. 
+
+Figure~\ref{fig2} (right) shows the ({\alam /\lam}) ratio as a function of $y$ in $pp$ collisions at {\sqrts} = 0.9 TeV from the ALICE experiment compared to the model simulations. It is observed that all models successfully reproduce the ({\alam /\lam}) ratio as a function of $y$ for all bins with  model-to-data discrepancy of $<$ 10\%. Overall, we find that all models are independent of the $y$ and closely describe the ({\alam /\lam}) ratio for all $y$ bins.      
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{zai_pt_0.9.pdf}
+\caption{{\ppt} dependent {\axi / \xim} ratio in $pp$ collisions at {\sqrts} = 0.9 TeV compared with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio shown in the lower panel. }
+\label{fig3}
+\end{figure}
+
+Figure~\ref{fig3} shows the comparative data for $pp$ collisions at {\sqrts} = 0.9 TeV from ALICE experiment and the model simulations for the ({\axi / \xim}) ratio as a function of {\ppt}. For ALICE data the ({\axi / \xim}) ratio is almost unity for all {\ppt} bins except for {\ppt} $>$ 2.5 GeV/$c$ where there is a sudden decrease in the ratio. However, the large uncertainty in the last ({\ppt} = $[3-3.5]$ GeV/$c$) bin makes it difficult to reach any final conclusions. The ({\axi / \xim}) ratio computed from nearly all models is around unity for all {\ppt} bins.  The large uncertainty found in the last two bins ({\ppt} $>$ 2.5 GeV/$c$) from model simulations makes it hard to reach any final conclusions. Additionally, the observed model-to-data ratio is shown in the lower panel of fig.~\ref{fig3}, where the uncertainty in the last two bins ({\ppt} $>$ 2.5 GeV/$c$) is around 20\% and 22\% respectively, as a result of statistical fluctuations . Apart from these two bins the model simulations are in good agreement with the experimental data within statistical uncertainties.    
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{pap_pt_7000.pdf}
+\caption{{\ppt} dependent $\overline{p}/p$ ratio in $pp$ collisions at {\sqrts} = 7 TeV compared with  DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio is shown in the lower panel. }
+\label{fig4}
+\end{figure}
+
+The ($\overline{p}/p$) ratio vs {\ppt} for ALICE data in $pp$ collisions at {\sqrts} = 7 TeV along with model simulations are given in fig.~\ref{fig4}. Neither the experimental nor the simulated data show any {\ppt} dependence and the ($\overline{p}/p$) ratio as a function of {\ppt} for both is nearly one. This explains why the production of anti-particle and particle is almost equal. This leads us to conclude that   
+all simulation models (DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC) closely describe experimental data. The model-to-data ratio shown in the lower panel of fig.~\ref{fig4} also show good agreement of experimental data with model simulations.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{lalam_pt_7000.pdf}
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{lalam_eta_7000.pdf}
+
+\caption{{\ppt} dependent {\alam /\lam} ratio (left) and $y$ (right) in $pp$ collisions at {\sqrts} = 7 TeV compared with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio is shown in the lower panel.}
+\label{fig5}
+\end{figure}
+
+Figure~\ref{fig5} (left) depicts the {\alam /\lam} ratio vs {\ppt} in $pp$ collisions at {\sqrts} = 7 TeV from the ALICE experiment. The experimental data is then compared to simulations calculated from DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models.  Experimental data in fig.~\ref{fig5} suggests that for low {\ppt} bins ($<$ 5.5 Gev/$c$) the {\alam /\lam} ratio is almost one and at higher {\ppt} bins ($>$ 5.5 Gev/$c$) it is  on average close to unity within uncertainties. A good agreement is observed between model simulations and experimental data including  statistical fluctuations at high {\ppt} bins ({\ppt} $> 7$ GeV/$c$) for both. However, it is difficult to reach any definitive conclusions because of large error bars, which results in a discrepancy between experimental data and simulations. The model-to-data ratio presented on the lower panel of fig.~\ref{fig5} also shows good agreement between experimental data and models for low {\ppt} bins ($<$ 7 GeV/$c$). However, at higher {\ppt} bins ($> 7$ GeV/$c$) the trend deviates from unity upto 40\% for EPOS~1.99 and less than 20\% for all other models. These discrepancies are a direct result of statistical fluctuations in the {\alam /\lam} ratio. An additional sub-panel is included in  fig.~\ref{fig5} (left) which is introduced to provide a zoomed-in version and additional details for {\ppt} $\leq 6$ GeV/$c$ for both data and models. It is clear from the sub-panel that all points for data and simulations are close to one, except for the last {\ppt} bin which has less than 10\% discrepancy.  
+{\alam /\lam} ratio as a function of $y$ is shown on fig.~\ref{fig5} (right) which illustrates that model simulations match the experimental data well for all $y$ bins. Additionally, fig.~\ref{fig5} shows that both simulations and experimental data are independent of the rapidity within uncertainties.   
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{zai_pt_7000.pdf}
+\includegraphics[width=0.49\textwidth,height=0.35\textheight]{zai_eta_7000.pdf}
+
+\caption{{\axi / \xim} ratio vs {\ppt} (left) and $y$ (right) in $pp$ collisions at {\sqrts} = 7 TeV in comparison with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. The model-to-data ratio is shown in the lower panel. }
+\label{fig6}
+\end{figure}
+
+Figure~\ref{fig6} (left) shows the {\axi / \xim} ratio vs {\ppt} in $pp$ collisions at {\sqrts} = 7 TeV. It is clear from the figure that at lower {\ppt} bins ($<$ 3 GeV/$c$) there is good agreement between data and simulations for all models within uncertainties. However, at higher {\ppt} ( $> 3$ GeV/$c$) fluctuations are observed which are due to fluctuation. Overall, we observe that the all models describe experimental data reasonably. 
+The model-to-data ratio presented on the lower panel of figure~\ref{fig6} shows the same trend; a good agreement between experimental data and models for low {\ppt} bins ($<$ 3 GeV/$c$), and a deviation from unity due to statistical fluctuations for high {\ppt} bins ($>$ 3 GeV/$c$) of up to 15\%. The {\axi / \xim} ratio as a function of rapidity is shown in fig.~\ref{fig6} (right). The experimental data and the computed ratio from the different models is consistent with unity within uncertainties for the entire rapidity range. Here again, it is observed that all models give a very good description of experimental data for all $y$ bins. 
+
+
+%As was said in previous sections, overall multiplicity coming from event with presence of different baryon number transport process is proportional to number of broken strings. Due to this, in high multiplicity sample we have higher probability to find events with baryon number transported by string junction itself. Similar explanation can be done for transverse momentum. So in general, antibaryon to baryon ratio can decrease as a function of transverse momentum and/or multiplicity.
+
+\subsection{Discussion}
+
+In this section, we detail the discrepancies between model simulations and the experimental data. We also discuss the changes and updates undertaken in this study to the various model simulations.
+
+There are certain possible ways baryons may be produced in $pp$, $pN$ and $NN$ collisions, that include the pair production of baryon and anti-baryon from a vacuum, which was included in the original Dual Parton Model (DPM). DMP was later was updated to include the multi-string fragmentation to enhance the baryon and anti baryon pair production. A good description of the distribution of hadrons in quark and gluon jets can also be given by the string fragmentation process. However, this does not reproduce the baryon stopping exactly and in order to explain the baryon stopping Capella and Kopeliovich (C-K)~\cite{11, 12, 13} suggested the addition of new diquark breaking diagrams, originally introduced by Kharzeev~\cite{14}. The baryon itself can be considered either as a combination of three quarks joined together by a string junction or a combination of diquark and a quark, where the string junction is considered a part of the diquark. This addition of new diquark breaking diagrams required modification to the DPMJET-III model. It should be noted here that for every new diquark produced there needs to be a new parameter introduced into the model. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.45\textwidth,height=0.3\textheight]{p_barp_dely.pdf}
+\includegraphics[width=0.45\textwidth,height=0.3\textheight]{l_lbar_dely.pdf}
+\includegraphics[width=0.45\textwidth,height=0.3\textheight]{zai_azai_dely.pdf}
+\caption{$\overline{B}/B$ as a function of $y_{beam}$ in $pp$ {\sqrts} = 0.9, 2.76, 7 and 13.6 TeV in comparison with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC simulations. Sub-figures are added for better visualization at higher energies. The data at lower rapidity is taken from~\cite{47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59}.  }
+\label{fig8}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ The mechanism by which  baryons are produced is more complex than the mechanism by which mesons are produced. As mentioned in section~\ref{sec1} the resulting distribution of the baryon-antibaryon pairs can be understood in terms of the string junction.  The simplest possibility is that the string breaks by the production of a diquark-antidiquark pair, which become the  constituents in the final baryons and the antibaryons. $B\overline{B}$ correlations observed in fig.~\ref{fig8} show that for large rapidity values ($>$ 6)  $B\overline{B}$ are produced in the same ratios, however for low rapidity values ($<$ 6) fewer $\overline{B}$s are produced with respect to $B$s. These results at high rapidity values are in good agreement with the assumption that the $B$ and the $\overline{B}$ are produced together as immediate neighbours in a string breakup.
+ 
+
+ 
+However, this process gets more complex when we consider the production of a meson along with the production of baryon-antibaryon pairs. This is known as the popcorn fragmentation and is based on the diquark breaking diagrams,  discussed in detail by Ranft~\cite{22}.  Currently, popcorn fragmentation is implemented in the Lund chain fragmentation model in JETSET~\cite{31} and is also used in the DPMJET-III model in this study.
+ 
+
+
+In $NN$ collisions, two baryon stopping mechanisms can take place, the Glauber sea quark mechanism of baryon stopping (GSQBS) and the unitary sea quark mechanism of baryon stopping (USQBS). In GSQBS process fewer $\overline{B}$s are left in the final state than $B$s. A simple explanation of GSQBS is that a valence diquark originating from the target beam and a sea quark originating from the nucleon projectile, join to produce the baryon in latter fragmentation steps. The sea quark in this interaction is called the Glauber sea quark and therefore the mechanism is called the GSQBS. The probability of GSQBS diquark splitting increases if the nucleon interacts more than once. In addition to GSQBS, the baryon stopping mechanism is also a side effect of chain fusion, for example, the fusion of either $qq$-$q$ and $\overline{q}$-$q$ chains to $q$-$qq$ chain~\cite{46}.
+
+
+USQBS is a special case of the GSQBS that takes place only at high energies and in which a single quark arising from the initial beam remains at the end of the chain. Both GSQBS and USQBS are implemented in  DPMJET-III, which leads to baryon stopping in $pp$ collisions, both at the cosmic ray energies and the collider energies. As mentioned above, for every new diquark produced there needs to be a new parameter introduced in the GSQBS and the USQBS. To determine the optimum values of these new parameters the net-baryon distributions ($\Delta B = B-\overline{B}$) from experimental data are compared to the DPMJET-III model. This study uses the new parameter value = 0.6 for both GSQBS and USQBS. 
+
+Additionally, due to limited experimental information on baryon production, in particular concerning multi-strange baryons, some simplifying approximations are also implemented in the DPMJET-III model. Pythia 8, on the other hand, is a pure multi-parton interaction model. It does not consider junction-stopping mechanisms but rather includes an enhanced baryon transfer from initial to final states. It must be noted here that in Pythia 8, the chain fragmentation pairs of diquark and anti-diquark can be exchanged at any position except close to the end of the chain~\cite{46}. Both EPOS models (EPOS~1.99 and EPOS-LHC) are based on Regge theory, which was introduced in section~\ref{sec1}. EPOS~1.99 is a pre-LHC model designed to simulate energies in the GeV range while LHC energies are in TeV ranges. Hence, EPOS-LHC model provides a comparatively better agreement with experimental data. 
+
+Figure~\ref{fig8} summarises the computed ratios for $\overline{p}/p$, {\alam /\lam} and {\axi / \xim} from various models in comparison with the data from multiple  experiments~\cite{47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59}, including PHENIX and STAR at BNL and NA23, NA49, ISR, CMS, and ALICE at CERN, as a function of $y_{beam}$. At lower $y_{beam}$, which corresponds to soft scattering, there is an exponential decrease in the probability of production of antibaryons. High $y_{beam} $ implies hard scattering which means there is a large momentum transfer and hence equal numbers of baryons and anti baryons are produced and the $\overline{B}/B$ ratio approaches unity. In order to better visualize the data points from various model simulation a sub figure is included in fig.~\ref{fig8}. We observe that the computed ratios from various models at higher $y_{beam}$ converge to unity and are in good agreement with the experimental data. 
+
+
+ Baryons are identified in experimental measurements by using a higher {\ppt} cut-off value than the mean {\ppt} of the produced baryons~\cite{20}. When comparing the model simulations to data the same {\ppt} were used. Regge models are used to derive the $y$ and $y_{beam}$ dependencies of the $\overline{B}/B$ ratios. It is important to note that in the phenomenological approach, the Pomeron exchange implemented in both EPOS~1.99 and EPOS-LHC models is responsible for the pair production of baryons at very high energies, i.e. at energies greater than current collider energies. 
+ 
+ The string junction transport also expresses the asymmetry ($A$), defined in section~\ref{sec1} as, ($A \equiv \frac{N_{p} - N_{\bar{p}}}{N_{p} + N_{\bar{p}}}$), between the production of baryons versus anti-baryons with an exchange of negative C-parity corresponding to the Reggon ($\omega$) exchange. This asymmetry in $pp$ collisions at {\sqrts} = 0.9, 2.76, 7 and 13.6 TeV, is computed with model simulations and results are provided in table~\ref{tab2}. In conclusion, any significant contribution due to $\omega$ exchange to the $\overline{B}/B$ ratios at mid-rapidity is suppressed. However, this contribution increases with the increase in beam rapidity ($y_{beam}$) resulting in the $\overline{B}/B$ ratio close to one. The asymmetry for protons from table~\ref{tab2}, clearly shows a decreasing trend with increasing energies for all models which means the number of protons and antiprotons are produced in equal numbers at high energies, a trend also confirmed by the predictions of models at {\sqrts} = 13.6 TeV.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \input table2.tex
+
+             
+\section{Summary}\label{sec4}
+
+In this study we computed the $\overline{p}/p$, {\alam /\lam}, {\axi / \xim} ratios from DPMJET-III, Pythia~8, EPOS 1.99, and EPOS-LHC model simulations in $pp$ collisions at {\sqrts} = 0.9, 2.76, 7 and 13.6 TeV. The ratios at 13.6 TeV were computed to check model predictions with experimental data when it is available since LHC is currently taking high luminosity data at 13.6 TeV in Run-III. 
+
+We report that these ratios ($\overline{p}/p$, {\alam /\lam} and {\axi / \xim}) are independent of both the transverse momentum ({\ppt}) and rapidity ($y$). Additionally, when compared to previously published experimental results from ALICE it is observed that all model simulations generally agree with the data. In multiple string fragmentation models, the information of baryon number is carried by the vortex lines which play an important role in the string structure and hence our understanding of baryons and particularly net baryon production ($\Delta B = B - \overline{B}$). The $\overline{B}/B$ ratios approach unity as mass of the constituent quarks increase, which reflects the mass hierarchy in the production of antibaryons. Additionally, it is observed that the ratio of hyperons with multiple strange quarks ({\axi / \xim}) approaches unity faster than those containing lighter quarks ($\overline{p}/p$). Additionally, fig.~\ref{fig7} shows that increasing the strangeness content results in the reduction of the anti-baryon stopping.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.35\textheight]{mean_pt.pdf}
+\caption{ $\overline{B}/B$ ratio at {\sqrts} = 0.9, 2.76 and 7~TeV in comparison with DPMJET-III, Pythia~8, EPOS~1.99, and EPOS-LHC models. Open squares of different colors are the prediction of various models at {\sqrts} = 13.6 TeV. }
+\label{fig7}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+At lower energies, we observe an excess of baryons over anti-baryons in all model simulations, which is directly related to the baryon number transfer from the incoming beam. However, this is not the case at higher energies, where baryon and anti-baryons are produced in equal numbers because of the baryon-and-anti-baryon pair production. This trend is somewhat alleviated by the introduction of the new diquark breaking diagrams in DPMJET-III model, which is why DPMJET-III shows the best correlation with experimental as well as the prediction at 13.6 TeV. The model simulations also suggest a saturation of pair production at higher energies leading to the ($\overline{B}/B$) ratio approaching unity. Model simulations also predict similar spectra, for both {\ppt} and $y$, for baryons and anti-baryons at large rapidity in $pp$ collisions. 
+
+We also report the predictions of asymmetry ($A$) for protons from the model simulations in $pp$ collisions at all {\sqrts} = 0.9, 2.76, 7.0 and 13.6 TeV. Previously the asymmetry was reported only for DPMJET-II, so our results will help put additional constraints on model calculations. The asymmetry shows a decreasing trend at higher energies for all model simulations, which is consistent with previously available experimental measurements. 
+
+
+\vskip0.5cm
+\textbf{Acknowledgement:}
+ The authors would like to show our deepest gratitude to the following individuals, Mr. Muhammad Salman Ashraf from the  Institute of Space Technology, Islamabad, and Dr. Muhammad Ahmad from the National Centre for Physics, Islamabad, for sharing their pearls of wisdom during the course of this research. 
+
+\vskip0.5cm
+\textbf{Availability of Data and Material:}
+The authors declare that all the supported data of this study are available within the article.
+
+%\endpage
+%\begin{thebibliography}{}
+%\bibitem{}
+\input bib.tex%
+%\end{thebibliography}
+
+
+
+%\end{multicols}
+
+
+
+\end{document}
+
